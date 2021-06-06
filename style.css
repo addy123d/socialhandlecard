@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+    color: #f1f3f8;
+}
+
+.pic {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pic img {
+    display: block;
+    height: 180px;
+    width: 180px;
+    border-radius: 100%;
+}
+
+.pic .text {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.text p {
+    margin-top: 10%;
+    font-size: 1.5rem;
+}
+
+.text p span {
+    font-size: .8rem;
+}
+
+.links {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.links>div {
+    display: inline;
+    padding: 30px;
+    background: #f1f3f8;
+    margin: auto;
+    color: #1c1d1e;
+    cursor: pointer;
+    border: .5px solid #fff;
+    transition: all .3s;
+}
+
+.links .fb:hover {
+    background: #4267B2;
+    color: #f1f3f8;
+}
+
+.links .fb:hover>a {
+    text-shadow: 1px 1px 2px #1c1d1e;
+    color: #f1f3f8;
+}
+
+.links .insta:hover {
+    background: #cd486b;
+    color: #f1f3f8;
+}
+
+.links .insta:hover>a {
+    text-shadow: 1px 1px 2px #1c1d1e;
+    color: #f1f3f8;
+}
+
+.links .twitter:hover {
+    background: #00acee;
+    color: #f1f3f8;
+}
+
+.links .twitter:hover>a {
+    text-shadow: 1px 1px 2px #1c1d1e;
+    color: #f1f3f8;
+}
+
+.links .linkedin:hover {
+    background: #0e76a8;
+    color: #f1f3f8;
+}
+
+.links .linkedin:hover>a {
+    text-shadow: 1px 1px 2px #1c1d1e;
+    color: #f1f3f8;
+}
+
+
+/* cOPYRIGHT */
+.copyright {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.copyright p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    text-decoration: none;
+    color: #1c1d1e;
+}
+
+
+/* For device less than 676px width */
+
+@media (max-width: 676px) {
+    .pic {
+        top: 18%;
+    }
+
+    .links {
+        top: 65%;
+    }
+
+    .copyright {
+        top: 95%;
+    }
+
+    .links>div {
+        display: block;
+    }
+
+    .text p {
+        font-size: 1.3rem;
+        margin-top: 15%;
+    }
+}
